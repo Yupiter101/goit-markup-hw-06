@@ -62,7 +62,7 @@ body {
 }
 
 /* main boxes in site */
-.box{
+.container{
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -725,13 +725,26 @@ body {
   cursor: pointer;
   box-shadow: none;
 
-  transition: box-shadow var(--transition-time-bezier);
+  /* transition: box-shadow var(--transition-time-bezier); */
+  transition: background-color var(--transition-time-bezier);
 }
 
 .modal-close-btn:hover, 
 .modal-close-btn:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
+  background-color: #4d5ae5;
+
+
 }
+
+/* .modal-close-btn-icon {
+  transition: fill var(--transition-time-bezier);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon, 
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: currentColor;
+} */
 
 .modal-close-btn-icon {
   transition: fill var(--transition-time-bezier);
@@ -739,7 +752,9 @@ body {
 
 .modal-close-btn:hover .modal-close-btn-icon, 
 .modal-close-btn:focus .modal-close-btn-icon {
-  fill: currentColor;
+  /* fill: currentColor; */
+  fill: #E7E9FC;
+  /* background-color: #4d5ae5; */
 }
 
 /* -----///backdrop modal-window--------------------------- */
